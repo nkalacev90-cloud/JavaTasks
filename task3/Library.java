@@ -47,13 +47,21 @@ public class Library {
     }
 
     // Поиск по жанру с анонимным классом
-    public ArrayList<Book> findBooksByGenre(Genre genre) {
-        ArrayList<Book> result = new ArrayList<>();
-        for (Book book : books) {
-            if (book.getGenre() == genre) {
-                result.add(book);
+   public ArrayList < Book > findBooksByGenre(Genre genre) {
+        BookFilter bookFilter = new BookFilter() {
+            @Override
+            public List < Book > findBooks(String filter) {
+                ArrayList < Book > result = new ArrayList<>();
+                for (Book book : books) {
+                    if (book.getGenre() == genre) {
+                        result.add(book);
+                    }
+                }
+                return result;
             }
-        }
-        return result;
+        };
+
+
+        return (ArrayList) bookFilter.findBooks(genre.toString());
     }
 }
