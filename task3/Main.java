@@ -21,7 +21,7 @@ public class Main {
         // Поиск по жанру
         ArrayList<Book> fiction = library.findBooksByGenre(Genre.FICTION);
         for (Book b : fiction) {
-            b.read();  // ✅ read(), а не wait()
+            b.read();
         }
 
         // Дополнительно: поиск научно-популярных
