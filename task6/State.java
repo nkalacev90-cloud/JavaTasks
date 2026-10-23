@@ -2,7 +2,6 @@ package JavaTask.task6;
 
 import lombok.ToString;
 
-@ToString
 
 public class State<T> {
     private final T value;
