@@ -1,7 +1,4 @@
 package JavaTask.task6;
-
-import lombok.ToString;
-
 import java.util.function.Function;
 
 public class StateMachine<T> {
