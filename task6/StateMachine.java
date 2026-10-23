@@ -3,7 +3,6 @@ package JavaTask.task6;
 import lombok.ToString;
 
 import java.util.function.Function;
-@ToString
 
 public class StateMachine<T> {
     private T value;
