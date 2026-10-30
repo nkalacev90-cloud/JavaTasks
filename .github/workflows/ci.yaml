@@ -30,4 +30,5 @@ jobs:
 
       # Компиляция и запуск тестов
       - name: Build and run tests
+        working-directory: App
         run: mvn --batch-mode clean verify
