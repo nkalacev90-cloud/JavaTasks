@@ -26,6 +26,7 @@ jobs:
           distribution: temurin
           java-version: '26'
           cache: maven
+          cache-dependency-path: App/pom.xml
 
       # Компиляция и запуск тестов
       - name: Build and run tests
