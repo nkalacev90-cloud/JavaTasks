@@ -1,6 +1,7 @@
 package JavaTask.task3;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Library {
     private ArrayList<Book> books = new ArrayList<>();
@@ -50,7 +51,7 @@ public class Library {
    public ArrayList < Book > findBooksByGenre(Genre genre) {
         BookFilter bookFilter = new BookFilter() {
             @Override
-            public List < Book > findBooks(String filter) {
+            public List< Book > findBooks(String filter) {
                 ArrayList < Book > result = new ArrayList<>();
                 for (Book book : books) {
                     if (book.getGenre() == genre) {
