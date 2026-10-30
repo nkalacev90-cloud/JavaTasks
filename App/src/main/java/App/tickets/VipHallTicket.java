@@ -1,6 +1,6 @@
 package App.tickets;
 
-import App.Ticket;
+import App.order.Ticket;
 import App.hall.Hall;
 import App.hall.Seat;
 import App.movies.Movie;

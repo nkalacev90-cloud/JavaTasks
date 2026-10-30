@@ -5,6 +5,8 @@ import App.hall.Hall;
 import App.hall.Seat;
 import App.movies.Genre;
 import App.movies.Movie;
+import App.order.EmpireOrder;
+import App.order.Ticket;
 import App.purchases.KioskFactory;
 import App.purchases.PurchaseInterfaceFactory;
 import App.tickets.EmpireTicket;

@@ -1,4 +1,4 @@
-package App;
+package App.order;
 
 import App.hall.Hall;
 import App.hall.Seat;
